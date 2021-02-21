@@ -8,7 +8,8 @@
     <style>
         body{
             background: url('https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg');
-            
+            background-color: rgba(0,0,0,0.4);
+            background-blend-mode:darken;
             background-repeat: no-repeat;
             background-size: cover;
         }
