@@ -1,1 +1,1 @@
-![alt text] ('https://github.com/[daryn-coder]/[DarynYeraliyev-profile-website]/blob/[master]/image.jpg?raw=true')
+![alt text] ('https://github.com/[daryn-coder]/[DarynYeraliyev-profile-website]/blob/[master]/home.png?raw=true')
