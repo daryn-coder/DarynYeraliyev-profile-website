@@ -26,7 +26,7 @@
             display: block;
         }
         .div{
-            margin:0 30%;
+            margin:0 25%;
             padding: 5px;
         }
         h1,p{
