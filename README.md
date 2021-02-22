@@ -1,1 +1,1 @@
-![alt text] ('https://github.com/[daryn-coder]/[DarynYeraliyev-profile-website]/blob/[master]/home.png?raw=true')
+![Alt text](home.png?raw=true "Optional Title")
