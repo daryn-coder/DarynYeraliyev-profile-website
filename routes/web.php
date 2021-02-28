@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\DB;
+use App\Models\Post;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +29,9 @@ Route::get('/profile-about', function () {
 Route::get('/profile-contact', function () {
     return view('profile_contact');
 })->name('profile_contact');
+Route::get('/post/create', function () {
+    DB::table("posts")->insert([
+        'title'=>"MyLife",
+        'body'=>"My name is Daryn. I am 18 years old."
+    ]);
+});
