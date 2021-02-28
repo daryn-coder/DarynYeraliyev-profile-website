@@ -35,3 +35,7 @@ Route::get('/post/create', function () {
         'body'=>"My name is Daryn. I am 18 years old."
     ]);
 });
+Route::get('/post', function () {
+    $post=Post::find(1);
+    return $post->body;
+});
