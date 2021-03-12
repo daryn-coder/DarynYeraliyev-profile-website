@@ -30,13 +30,13 @@ Route::get('/profile-about', function () {
 Route::get('/profile-contact', function () {
     return view('profile_contact');
 })->name('profile_contact');
-Route::get('/post/create', function () {
-    DB::table("posts")->insert([
-        'title'=>"MyLife",
-        'body'=>"My name is Daryn. I am 18 years old."
-    ]);
-});
-Route::get('/post', [BlogController::class,'index']);
+// Route::get('/post/create', function () {
+//     DB::table("posts")->insert([
+//         'title'=>"MyLife",
+//         'body'=>"My name is Daryn. I am 18 years old."
+//     ]);
+// });
+Route::get('/blog', [BlogController::class,'index']);
 Route::get('/blog/create',function(){
     return view('blog.create');
 });
