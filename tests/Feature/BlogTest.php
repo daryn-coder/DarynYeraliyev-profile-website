@@ -21,7 +21,7 @@ class BlogTest extends TestCase
     }
 
     public function test_post_id_get_request(){
-        $response = $this->get('/blog/1');
+        $response = $this->get('/blog/7');
 
         $response->assertStatus(200);
     }
@@ -33,7 +33,7 @@ class BlogTest extends TestCase
     }
 
     public function test_blog_response(){
-        $response = $this->get('/blog/1');
+        $response = $this->get('/blog/7');
 
         $response->assertViewHas('blog');
     }
