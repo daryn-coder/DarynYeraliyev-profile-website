@@ -5,8 +5,10 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\FormController;
 use App\Models\Upload;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -49,4 +51,6 @@ Route::get('/blog/{id}', [BlogController::class,'get_blog']);
 
 Route::post('form/upload', [FormController::class, 'uploadsubmit'])->name('add-form');
 Route::get('form/upload', [FormController::class,'uploadform']);
+Route::get('/send', [EmailController::class, 'send']);
+
 
