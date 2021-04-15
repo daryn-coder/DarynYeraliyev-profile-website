@@ -8,6 +8,9 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\FormController;
 use App\Models\Upload;
+use Illuminate\Support\Facades\App;
+
+
 
 
 /*
@@ -53,4 +56,17 @@ Route::post('form/upload', [FormController::class, 'uploadsubmit'])->name('add-f
 Route::get('form/upload', [FormController::class,'uploadform']);
 Route::get('/send', [EmailController::class, 'send']);
 
+Route::get('profile-home/{lang}', function($lang) {
+    App::setlocale($lang);
+    return view('profile_home');
+});
+
+Route::get('profile-about/{lang}', function($lang) {
+    App::setlocale($lang);
+    return view('profile_about');
+});
+Route::get('profile-contact/{lang}', function($lang) {
+    App::setlocale($lang);
+    return view('profile_contact');
+});
 

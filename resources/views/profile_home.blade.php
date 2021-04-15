@@ -16,9 +16,9 @@
         
         <div class="ind">
             <div class="menu">
-                <a href="{{ route('profile_home') }}" class="menu-content">Home</a>
-                <a href="{{ route('profile_about') }}" class="menu-content">About Us</a>
-                <a href="{{ route('profile_contact') }}" class="menu-content">Contact</a>
+                <a href="{{ url('/profile-home/' . app()->getlocale()) }}" class="menu-content">{{__('lang.home')}}</a>
+                <a href="{{ url('/profile-about/' . app()->getlocale()) }}" class="menu-content">{{__('lang.about')}}</a>
+                <a href="{{ url('/profile-contact/' . app()->getlocale()) }}" class="menu-content">{{__('lang.contact')}}</a>
             </div>
             <div class="bio">
                 <h1>Daryn Yeraliyev</h1>
@@ -28,7 +28,7 @@
                     voluptates in similique optio asperiores magni earum ab ipsum,
                     eum, perspiciatis, alias repellendus?
                 </p>
-                <button class="btn btn-info">More Info</button>
+                <button class="btn btn-info">{{__('lang.info')}}</button>
             </div>
         </div>
     </div>

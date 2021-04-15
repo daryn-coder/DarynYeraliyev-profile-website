@@ -57,30 +57,29 @@
 <body>
     <div class="container">
         <div class="menu">
-            <a href="{{ route('profile_home') }}" class="menu-content">Home</a>
-            <a href="{{ route('profile_about') }}" class="menu-content">About Us</a>
-            <a href="{{ route('profile_contact') }}" class="menu-content">Contact</a>
+            <a href="{{ url('/profile-home/' . app()->getlocale()) }}" class="menu-content">{{__('lang.home')}}</a>
+            <a href="{{ url('/profile-about/' . app()->getlocale()) }}" class="menu-content">{{__('lang.about')}}</a>
+            <a href="{{ url('/profile-contact/' . app()->getlocale()) }}" class="menu-content">{{__('lang.contact')}}</a>
         </div>
-        <h1>Contact Me</h1>
+        <h1>{{__('lang.mecontact')}}</h1>
         <p>
-            Got a question? I'd love to hear from you. Send me a message
-            and I'll respond as soon as possible.
+        {{__('lang.question')}}
         </p>
         <form action="" class="form">
             <div class="div">
-                <b>Name*</b>
+                <b>{{__('lang.name')}}</b>
                 <input type="text" class="input">
             </div>
             <div class="div">
-                <b>E-mail address*</b>
+                <b>{{__('lang.email')}}</b>
                 <input type="email" class="input">
             </div>
             <div class="div">
-                <b>Message</b>
+                <b>{{__('lang.message')}}</b>
                 <textarea cols="25" rows="3" class="input"></textarea>
             </div>
             <div class="div">
-                <button class="btn btn-outline-dark" type="submit">Send</button>
+                <button class="btn btn-outline-dark" type="submit">{{__('lang.send')}}</button>
             </div>
         </form>
     </div>

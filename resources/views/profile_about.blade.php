@@ -43,12 +43,12 @@
 </head>
 <body>
     <div class="menu">
-        <a href="{{ route('profile_home') }}" class="menu-content">Home</a>
-        <a href="{{ route('profile_about') }}" class="menu-content">About Us</a>
-        <a href="{{ route('profile_contact') }}" class="menu-content">Contact</a>
+        <a href="{{ url('/profile-home/' . app()->getlocale()) }}" class="menu-content">{{__('lang.home')}}</a>
+        <a href="{{ url('/profile-about/' . app()->getlocale()) }}" class="menu-content">{{__('lang.about')}}</a>
+        <a href="{{ url('/profile-contact/' . app()->getlocale()) }}" class="menu-content">{{__('lang.contact')}}</a>
     </div>
     <div class="container">
-        <h1>Welcome!</h1>
+        <h1>{{__('lang.welcome')}}</h1>
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae debitis doloribus pariatur harum sed? Ratione voluptates libero architecto, et blanditiis officia. Quisquam hic error alias officiis quia consequatur quidem quae.
         </p>
