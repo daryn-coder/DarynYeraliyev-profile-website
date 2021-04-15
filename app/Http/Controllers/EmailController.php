@@ -14,6 +14,6 @@ class EmailController extends Controller
         $objectDemo = new \stdClass();
         $objectDemo -> reciever = 'Daryn';
         $objectDemo -> sender = 'Daryn';
-        Mail::to('190103213@stu.sdu.edu.kz')->send(new DemoEmail($objectDemo));
+        Mail::to('abylay.omar@sdu.edu.kz')->send(new DemoEmail($objectDemo));
     }
 }

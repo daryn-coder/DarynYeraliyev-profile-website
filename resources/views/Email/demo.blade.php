@@ -1,3 +1,3 @@
 <div>{{$demo->reciever}}</div>
-<p>Sen mal emessn!)))</p>
+<p>Agai kalaisyz? ;)</p>
 <div>{{$demo->sender}}</div>
